@@ -1,0 +1,261 @@
+/* Font Family Link */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+/* Root Colours */
+:root {
+  --blue: #135cb0;
+  --blue-hover: #2c88f1;
+  --light-brown: rgb(209, 25, 71);
+  --light-brown-hover: rgb(245, 58, 104);
+  --bgc-gray: rgb(230, 230, 230);
+  --bgc-dark: rgb(51, 51, 51);
+  --small-font: 12px;
+  --large-font: 18px;
+}
+/* Universal CLasses */
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+/* Utilities CLasses */
+
+/* Container */
+.bg-gray {
+  background-color: var(--bgc-gray);
+}
+.bg-dark {
+  background-color: var(--bgc-dark);
+}
+.container {
+  width: 60%;
+  margin: 0px auto;
+}
+.container-2 {
+  width: 80%;
+  margin: 0px auto;
+}
+/* flex */
+.d-flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.align-items-center {
+  align-items: center;
+}
+.gap-5 {
+  gap: 20px;
+}
+.gap-7 {
+  gap: 30px;
+}
+/* Grid Classes */
+.grid {
+  display: grid;
+}
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+/* Position */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+/* Overflow */
+.overflow-hidden {
+  overflow: hidden;
+}
+/* Text Classes */
+.text-white {
+  color: white;
+}
+.text-blue {
+  color: var(--light-brown);
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+/* Font Sizes */
+.large-font {
+  font-size: var(--large-font);
+}
+.small-font {
+  font-size: var(--small-font);
+}
+.card-header {
+  font-size: 27px;
+}
+/* Margin */
+.mt-20 {
+  margin-top: 60px;
+}
+.my-20 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+/* Buttons */
+.btn-small {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-blue {
+  background-color: var(--blue);
+  transition: background-color ease-in-out 0.5s;
+}
+.btn-blue:hover {
+  background-color: var(--blue-hover);
+}
+.btn-brown {
+  background-color: var(--light-brown);
+  transition: background-color ease-in-out 0.5s;
+}
+.btn-brown:hover {
+  background-color: var(--light-brown-hover);
+}
+/* Header Section */
+.header-section {
+  height: 5.625rem;
+  padding: 0px 1.125rem;
+}
+.header-input {
+  border: 1px solid #ccc;
+  height: 2rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  border-radius: 2rem;
+}
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+/* NavBar */
+.navBar {
+  background-color: var(--bgc-gray);
+  padding: 0px;
+}
+.nav-link {
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1;
+  border-left: 1px solid rgba(212, 212, 212, 0.856);
+}
+.nav-link a {
+  padding: 20px;
+}
+.nav-link:hover {
+  background-color: #fff;
+}
+/* Hero Section */
+.hero-section {
+  margin-top: -18px;
+  width: 100%;
+  height: 80vh;
+}
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-text-box {
+  width: 500px;
+  background-color: #ffffffb2;
+  bottom: 40px;
+  left: 40px;
+  padding: 0px 20px;
+}
+.hero-text {
+  font-size: 60px;
+}
+.hero-btns {
+  padding: 40px 40px;
+  background-color: var(--bgc-gray);
+}
+/* Cards Section */
+.cards {
+  margin: 50px 0px;
+}
+.card {
+  width: 358px;
+  height: 501px;
+  border: 1px solid var(--bgc-gray);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow ease-in-out 0.4s;
+}
+.card-img {
+  width: 358px;
+  height: 224px;
+  transition: transform ease-out 1s;
+}
+.card:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+  .card-header {
+    color: var(--light-brown);
+  }
+  .card-img {
+    transform: scale(1.1);
+  }
+}
+.card-body {
+  padding: 20px 28px;
+}
+.card-header {
+  color: var(--blue);
+}
+/* Stories Section */
+.story-section {
+  padding: 40px 40px 80px 40px;
+}
+.card-row {
+  width: 90%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+/* Contact section */
+.contact-text {
+  font-size: 48px;
+}
+/* Footer Link */
+.footer-link {
+  margin: 0px 5px;
+  text-decoration: underline;
+  line-height: 50px;
+}
+.footer-area {
+  padding: 40px;
+}
